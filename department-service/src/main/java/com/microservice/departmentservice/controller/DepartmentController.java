@@ -15,6 +15,7 @@ public class DepartmentController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(DepartmentController.class);
 
+    @Autowired
     private DepartmentRepository departmentRepository;
 
     @PostMapping
