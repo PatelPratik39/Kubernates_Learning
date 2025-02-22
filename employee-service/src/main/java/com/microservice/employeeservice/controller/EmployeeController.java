@@ -34,4 +34,13 @@ public class EmployeeController {
         LOGGER.info("Employee findById: {}", id);
         return employeeRepository.findById(id);
     }
+
+//    Find an employee using Department Id
+    @GetMapping("/department/{departmentId}")
+    public List<Employee> findByDepartment(@PathVariable("departmentId")  Long departmentId) {
+        LOGGER.info("Employee findByDepartmentId: {}", departmentId);
+        return employeeRepository.findByDepartment(departmentId);
+    }
+
+
 }

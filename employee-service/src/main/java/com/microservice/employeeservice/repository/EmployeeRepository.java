@@ -26,7 +26,7 @@ public class EmployeeRepository {
                 .orElseThrow();
     }
 
-    public List<Employee> findByDepartmentId(Long departmentId) {
+    public List<Employee> findByDepartment(Long departmentId) {
         return  employees.stream()
                 .filter(a -> a.departmentId().equals(departmentId))
                 .toList();
