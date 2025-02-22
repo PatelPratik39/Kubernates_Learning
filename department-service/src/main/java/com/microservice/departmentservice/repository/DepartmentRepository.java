@@ -7,20 +7,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Repository
-public interface DepartmentRepository  {
+public class DepartmentRepository  {
 
     List<Department> departments = new ArrayList<>();
 
-    default Department addDepartment(Department department){
+    public Department addDepartment(Department department){
         departments.add(department);
         return department;
     }
 
-     default Department findById(Long id){
+     public Department findById(Long id){
         return departments.stream().filter(department -> department.getId().equals(id)).findFirst().orElseThrow();
     }
 
-    default List<Department> findAll(){
+    public List<Department> findAll(){
         return departments;
     }
 }
