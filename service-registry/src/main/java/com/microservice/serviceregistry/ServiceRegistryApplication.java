@@ -10,7 +10,7 @@ public class ServiceRegistryApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ServiceRegistryApplication.class, args);
-		System.err.println("Service - Registery microservice is up and running");
+		System.err.println("Service - Registery microservice is up and running 🏃✅");
 	}
 
 }
