@@ -1,18 +1,23 @@
 # Kubernates_Learning
 
-# Basic Commands
+## Basic Commands
 
-    ```sh
-    minikube start
+```sh
+# Start Minikube
+minikube start
 
-    ```sh
-    kubectl get namespaces
+# Get all namespaces
+kubectl get namespaces
 
-    ```sh
-    kubectl get pods
+# Get all pods
+kubectl get pods
 
-    ```sh
-    kubectl get deployment
+# Get all deployments
+kubectl get deployments
+
+# Get all services
+kubectl get services
+
   
 
   
