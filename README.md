@@ -18,6 +18,7 @@ kubectl get deployments
 # Get all services
 kubectl get services
 
-  
+# 🚨🚨🚨 Delete all services  🚨🚨   -> Do not use this command in Production
+kubectl delete all --all
 
   
